@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Javascript Quiz app</title>
+</head>
+<body>
+    <div class="bg">
+        <div>
+           <i class="fas fa-crown crown_icon"></i>
+           <h3 class="username">Well done! <span id="user_name"></span></h3>
+           <p class="userpoints">Your have got <span id="points"></span>&nbsp;Points</p>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/d56261bbb9.js"></script>
+
+
+        <!-- user info -->
+        <script>
+            let student = sessionStorage.getItem("name");
+            document.getElementById("user_name").innerHTML = student;
+            let scoress = sessionStorage.getItem("score");
+            document.getElementById("points").innerHTML=scoress;
+            </script>
+            <script src="./js/quiz.js"></script>
+</body>
+</html>
